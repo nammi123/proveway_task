@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>proveway</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+<body>
+  <div class="container">
+    <h2>YAY! It’s BOGO</h2>
+
+    <div class="option selected" onclick="selectOption(this, 10)">
+      <div style="display: flex; align-items: flex-start;">
+        <input type="radio" name="unit" checked>
+        <div class="details">
+          <div class="title">1 Unit <span class="badge">10% Off</span></div>
+          <div class="subtitle">Standard Price</div>
+        </div>
+      </div>
+      <div class="price-area">
+        <div class="price">$10.00 USD</div>
+        <div class="old-price">$24.00 USD</div>
+      </div>
+    </div>
+
+    <div class="option" onclick="selectOption(this, 18)">
+      <div class="most-popular">MOST POPULAR</div>
+      <div style="display: flex; align-items: flex-start;">
+        <input type="radio" name="unit">
+        <div class="details">
+          <div class="title">2 Unit <span class="badge">20% Off</span></div>
+          <div class="variants">
+            <div class="variant-row">
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+            <div class="variant-row">
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select>
+                <option>Colour</option>
+                <option>Red</option>
+                <option>Green</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="price-area">
+        <div class="price">$18.00 USD</div>
+        <div class="old-price">$24.00 USD</div>
+      </div>
+    </div>
+
+    <div class="option" onclick="selectOption(this, 24)">
+      <div style="display: flex; align-items: flex-start;">
+        <input type="radio" name="unit">
+        <div class="details">
+          <div class="title">3 Unit <span class="badge">30% Off</span></div>
+        </div>
+      </div>
+      <div class="price-area">
+        <div class="price">$24.00 USD</div>
+        <div class="old-price">$24.00 USD</div>
+      </div>
+    </div>
+
+    <div class="summary">
+      <div class="delivery">Free Delivery</div>
+      <div class="total">Total : <span id="total">$10.00 USD</span></div>
+    </div>
+
+    <button>Add to Cart</button>
+    <div class="footer">@ Powered by Pumper</div>
+  </div>
+
+  <script src="task.js"></script>
+</body>
+</html>
